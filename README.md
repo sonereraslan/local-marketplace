@@ -1,6 +1,6 @@
 # superunity
 
-Comprehensive Unity 3D development plugin for Claude Code — exploring, planning, TDD, debugging, code review, subagent orchestration, verification, and tutorial scriptwriting.
+Comprehensive Unity 3D development plugin for Claude Code — exploring, planning, TDD, debugging, code review, subagent orchestration and verification.
 
 ---
 
@@ -58,7 +58,6 @@ Typical flow:
 | `unity-error-analyzer` | Diagnose Console errors, stack traces, test failures |
 | `unity-test-writer` | Generate EditMode or PlayMode tests for existing code |
 | `unity-project-scanner` | Summarise project structure, packages, conventions |
-| `unity-tutorial-scriptwriter` | Turn finished code or a debug journey into a YouTube tutorial script |
 
 ---
 
@@ -91,7 +90,6 @@ Trigger a skill by phrasing a message matching its description, or invoke explic
 
 ```
 /superunity:unity-writing-plans
-@"unity-tutorial-scriptwriter" turn the player controller we just built into a video
 ```
 
 -------
