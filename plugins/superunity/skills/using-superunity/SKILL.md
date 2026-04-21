@@ -55,7 +55,6 @@ Use the `Agent` tool to dispatch these. Agents run autonomously and return resul
 | `superunity:unity-error-analyzer` | "What's this error?", analyse Unity Console errors, stack traces, NullReferenceExceptions, test failures |
 | `superunity:unity-test-writer` | "Write tests for this class", generate EditMode or PlayMode tests for existing code |
 | `superunity:unity-project-scanner` | "Scan this project", summarize project structure, packages, conventions, architecture |
-| `superunity:unity-tutorial-scriptwriter` | "Write a YouTube tutorial script", "turn this into a video", scripted video content for Unity tutorials |
 
 **When to use an agent vs a skill:**
 - **Agent:** User wants a specific, bounded result (analyse this script, write tests for this class, explain this error)
