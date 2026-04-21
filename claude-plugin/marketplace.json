@@ -1,0 +1,29 @@
+{
+  "name": "local-marketplace",
+  "description": "Local plugin marketplace for personal Claude Code extensions",
+  "owner": {
+    "name": "Soner Eraslan"
+  },
+  "plugins": [
+    {
+      "name": "superunity",
+      "description": "Comprehensive Unity 3D game development plugin for Claude Code: exploring, planning, TDD, debugging, code review, subagent orchestration, and verification workflows",
+      "version": "1.0.0",
+      "author": {
+        "name": "Soner Eraslan"
+      },
+      "source": "./plugins/superunity",
+      "category": "development"
+    },
+    {
+      "name": "superunity-design",
+      "description": "Game design toolkit for a 2.5D puzzle platformer (Valiant Hearts style). 9 auto-triggered design skills (routing hub, brainstorming, mechanics, puzzles, narrative, level, camera, visual feedback, audio) plus 5 agents (design-scene, design-review, design-brief, polish-pass, mechanic-test).",
+      "version": "1.0.0",
+      "author": {
+        "name": "Soner Eraslan"
+      },
+      "source": "./plugins/superunity-design",
+      "category": "design"
+    }
+  ]
+}
