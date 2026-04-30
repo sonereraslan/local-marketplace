@@ -24,8 +24,12 @@ escape_for_json() {
 using_superunity_escaped=$(escape_for_json "$using_superunity_content")
 session_context="You have superunity powers for Unity 3D development.\n\n**Below is your 'superunity:using-superunity' skill — your guide to using Unity development skills. For all other skills, use the Skill tool:**\n\n${using_superunity_escaped}"
 
-# Output context injection as JSON
-cat <<EOF
+# Output context injection as JSON.
+# Cursor hooks expect additional_context.
+# Claude Code hooks expect hookSpecificOutput.additionalContext.
+# Claude Code sets CLAUDE_PLUGIN_ROOT — use it to detect the platform.
+if [ -n "${CLAUDE_PLUGIN_ROOT:-}" ]; then
+  cat <<EOF
 {
   "hookSpecificOutput": {
     "hookEventName": "SessionStart",
@@ -33,5 +37,12 @@ cat <<EOF
   }
 }
 EOF
+else
+  cat <<EOF
+{
+  "additional_context": "${session_context}"
+}
+EOF
+fi
 
 exit 0
