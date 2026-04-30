@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh",
             "async": false
           }
         ]
@@ -18,12 +18,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/check-unity-gitignore.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/check-unity-gitignore.sh",
             "async": false
           },
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/check-debug-logs.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/check-debug-logs.sh",
             "async": false
           }
         ]
